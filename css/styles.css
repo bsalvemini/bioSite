@@ -1,0 +1,154 @@
+/*
+Student Name: Brandon Salvemini
+File Name: styles.css
+Date: November 23rd, 2023
+*/
+
+/* CSS Reset */
+body, header, nav, main, footer, img, h1, h3, ul {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* Style rules for body, images and headings */
+body {
+  background: #ffb6c1;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  padding: 5% 0 2%;
+}
+
+h1, h3 {
+  font-family: 'Quicksand', sans-serif;
+}
+
+/* Style rules for mobile viewport */
+
+/* Style rules for header area */
+header {
+  text-align: center;
+  padding: 2%;
+  background-color: #ffb6c1;
+  font-family: 'Merriweather', serif;
+}
+
+header h1, header h3 {
+  color: #ffef00;
+}
+
+/* Style rules for navigation area */
+nav {
+  display: block;
+  background-color: #eee600;
+}
+
+nav ul {
+  list-style-type: none;
+  text-align: center;
+}
+
+nav li {
+  display: inline-block;
+  font-size: 1.5em;
+  font-family: 'Quicksand', sans-serif;
+}
+
+nav li a {
+  display: block;
+  color: #000;
+  padding: 0.5em;
+  text-decoration: none;
+}
+
+/* Style rules for hero image */
+#hero img {
+  padding: 0;
+}
+
+/* Style rules for main content */
+
+main {
+  padding: 2%;
+  font-family: 'Merriweather', serif;
+}
+
+main h1 {
+  color: #ffef00;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+main a {
+  text-decoration: none;
+  color: #eee600;
+}
+
+/* Style rules for footer content */
+
+footer {
+  background-color: #eee600;
+  text-align: center;
+  font-family: 'Quicksand', sans-serif;
+  padding: 0.5em;
+}
+
+  /* Media Query for Tablet Viewport */
+  @media screen and (min-width: 630px), print {
+
+    /* Tablet Viewport: Style rules for nav area */
+    /* header {
+      text-align: left;
+      padding: 1%;
+    } */
+
+    /* Tablet Viewport: Style rules for nav area */
+    nav ul {
+      text-align: center;
+    }
+
+    nav li a {
+      padding: 0.5em;
+    }
+
+    /* Tablet Viewport: Style rules for main area */
+    main h1 {
+      font-size: 2em; /* Resets h1 back to default size */
+    }
+
+    #homeImg1, #homeImg2 {
+      width: 45%;
+      float: left;
+      margin: 0 2%;
+    }
+
+    #homeText {
+      clear: left;
+    }
+
+  }
+
+  /* Media Query for Desktop Viewport */
+  @media screen and (min-width: 1015px), print {
+
+    nav li a:hover {
+      background-color: #ffb6c1;
+    }
+
+  }
+
+  /* Media Query for Large Desktop Viewports */
+  @media screen and (min-width: 1921px) {
+
+    body {
+      background: linear-gradient(#ffb6c1, #ff69b4);
+    }
+
+    #container {
+      width: 1920px;
+      margin: 0 auto;
+    }
+  }
