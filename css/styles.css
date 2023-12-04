@@ -119,6 +119,12 @@ footer {
       font-size: 2em; /* Resets h1 back to default size */
     }
 
+    .grid {
+      display: grid;
+      grid-template-columns: auto auto;
+      grid-gap: 20px;
+    }
+
     #homeImg1, #homeImg2 {
       width: 45%;
       float: left;
