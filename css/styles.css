@@ -5,7 +5,7 @@ Date: November 23rd, 2023
 */
 
 /* CSS Reset */
-body, header, nav, main, footer, img, h1, h3, ul {
+body, header, nav, main, footer, img, h1, h3, ul, figure, figcaption {
   margin: 0;
   padding: 0;
   border: 0;
@@ -27,6 +27,15 @@ h1, h3 {
 }
 
 /* Style rules for mobile viewport */
+
+/* Style rules to show mobile class and hide tab-desk class */
+.mobile {
+  display: block;
+}
+
+.tab-desk {
+  display: none;
+}
 
 /* Style rules for header area */
 header {
@@ -87,6 +96,30 @@ main a {
   color: #eee600;
 }
 
+main ul {
+   margin-left: 5%;
+   list-style-type: circle;
+}
+
+/* Style rules for hobby page gallery */
+/* Based on the CSS for figure from Week 7 lab */
+figure {
+  border: 4px solid #eee600;
+  box-shadow: 6px 6px 10px #bfc587;
+  max-width: 400px;
+  margin: 2% auto;
+}
+
+figure img {
+  padding: 0;
+}
+
+figcaption {
+  padding: 2%;
+  border-top: 4px solid #eee600;
+  text-align: center;
+}
+
 /* Style rules for footer content */
 
 footer {
@@ -105,6 +138,16 @@ footer {
       padding: 1%;
     } */
 
+    /* Tablet Viewport: Show tab-desk class, hide mobile class  */
+
+    .mobile {
+      display: none;
+    }
+
+    .tab-desk {
+      display: block;
+    }
+
     /* Tablet Viewport: Style rules for nav area */
     nav ul {
       text-align: center;
@@ -119,10 +162,40 @@ footer {
       font-size: 2em; /* Resets h1 back to default size */
     }
 
+    /* Tablet Viewport: Style rules for table */
+
+    table {
+      border: 1px solid #eee600;
+      border-collapse: collapse;
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    th, td {
+      border: 1px solid #eee600;
+      padding: 2%;
+    }
+
+    th {
+      background-color: #eee600;
+      color: #000;
+    }
+
+    tr:nth-child(odd) {
+      background-color: #eee600;
+    }
+
     .grid {
       display: grid;
       grid-template-columns: auto auto;
       grid-gap: 20px;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: auto auto;
+      grid-gap: 30px;
+      align-items: center; /* This property was discovered while experimenting with the grid editor in the Chrome dev tools */
     }
 
     #homeImg1, #homeImg2 {
@@ -142,6 +215,10 @@ footer {
 
     nav li a:hover {
       background-color: #ffb6c1;
+    }
+
+    .gallery-grid {
+      grid-template-columns: auto auto auto;
     }
 
   }
