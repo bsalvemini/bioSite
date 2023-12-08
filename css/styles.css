@@ -185,6 +185,7 @@ footer {
       background-color: #eee600;
     }
 
+    /* Tablet Viewport: Style rules for grid layouts */
     .grid {
       display: grid;
       grid-template-columns: auto auto;
@@ -198,14 +199,14 @@ footer {
       align-items: center; /* This property was discovered while experimenting with the grid editor in the Chrome dev tools */
     }
 
-    #homeImg1, #homeImg2 {
-      width: 45%;
-      float: left;
-      margin: 0 2%;
+    .home-grid {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      grid-gap: 20px;
     }
 
-    #homeText {
-      clear: left;
+    .home-text {
+      grid-column: 1 / span 2;
     }
 
   }
@@ -217,6 +218,7 @@ footer {
       background-color: #ffb6c1;
     }
 
+    /* Desktop viewport: Change gallery grid to 3 columns */
     .gallery-grid {
       grid-template-columns: auto auto auto;
     }
