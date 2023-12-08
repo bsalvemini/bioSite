@@ -5,7 +5,7 @@ Date: November 23rd, 2023
 */
 
 /* CSS Reset */
-body, header, nav, main, footer, img, h1, h3, ul, figure, figcaption {
+body, header, nav, main, footer, img, h1, h3, ul, figure, figcaption, section {
   margin: 0;
   padding: 0;
   border: 0;
@@ -94,6 +94,11 @@ main h1 {
 main a {
   text-decoration: none;
   color: #eee600;
+}
+
+/* Underline links within the main element when hovered over */
+main a:hover {
+  text-decoration: underline;
 }
 
 main ul {
@@ -237,3 +242,11 @@ footer {
       margin: 0 auto;
     }
   }
+
+/* Media Query for Print */
+@media print {
+  body {
+    background-color: #fff;
+    color: #000;
+  }
+}
