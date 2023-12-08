@@ -26,6 +26,24 @@ h1, h3 {
   font-family: 'Quicksand', sans-serif;
 }
 
+/* Style rule for all elements when selected */
+/* Makes the selection color of all elements yellow and the color of selected text white */
+/* This is for additional design requirement 8 */
+/* This was found on W3School's CSS Pseudo-classes page */
+*::selection {
+  color: #fff;
+  background-color: #eee600;
+}
+
+/* Style rule for list markers */
+
+/* Turns the bullets of the list on hobbies page in the mobile viewport yellow */
+/* This is for additional design requirement 8 */
+/* This was found on W3School's CSS Pseudo-classes page */
+::marker {
+  color: #eee600;
+}
+
 /* Style rules for mobile viewport */
 
 /* Style rules to show mobile class and hide tab-desk class */
