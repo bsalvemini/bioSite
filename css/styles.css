@@ -22,7 +22,7 @@ img {
   padding: 5% 0 2%;
 }
 
-h1, h3 {
+h1, h2, h3 {
   font-family: 'Quicksand', sans-serif;
 }
 
@@ -103,7 +103,7 @@ main {
   font-family: 'Merriweather', serif;
 }
 
-main h1 {
+main h1, main h2 {
   color: #ffef00;
   font-size: 1.5em;
   text-align: center;
