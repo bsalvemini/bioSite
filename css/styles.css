@@ -123,6 +123,15 @@ main ul {
    margin-left: 5%;
 }
 
+#homeImg1, #homeImg2 {
+  margin-top: 2%;
+  background-color: #eee600;
+}
+
+#homeImg1 img, #homeImg2 img {
+  margin: 0 auto;
+}
+
 /* Style rules for hobby page gallery */
 /* Based on the CSS for figure from Week 7 lab */
 figure {
@@ -228,7 +237,10 @@ footer {
     .home-grid {
       display: grid;
       grid-template-columns: auto auto auto;
-      grid-gap: 20px;
+    }
+
+    #homeImg1, #homeImg2 {
+      padding: 0 2% 0 2%;
     }
 
     .home-text {
